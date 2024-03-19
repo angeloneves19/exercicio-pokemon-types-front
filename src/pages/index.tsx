@@ -40,19 +40,18 @@ export default function Home() {
   const handleSelect = (event: any) => {
     setSelectedPokemon(event.target.value)
   }
-
   const handleClick = async () => {
     try {
-      const response = await axios.get(
-        `http://localhost:8080/${selectedPokemon}`
-      )
-      return setPokemonData(response.data)
+      const response = await axios.get(`http://localhost:8080/${selectedPokemon}`);
+      setPokemonData(response.data);
     } catch (error) {
-      console.error(error)
+      console.error(error);
+      alert('Ocorreu um erro ao buscar os dados do Pokémon. Por favor, tente novamente mais tarde.');
     }
-    console.log(selectedPokemon)
-  }
-  console.log(pokemonData)
+    console.log(selectedPokemon);
+  };
+
+  console.log(pokemonData);
   return (
     <section>
       <label className="flex  justify-center">
@@ -79,7 +78,7 @@ export default function Home() {
           Enviar
         </button>
       </div>
-      <div className="flex  justify-center py-12 lg:px-8">
+      <div className="flex justify-center py-12 lg:px-8">
         {pokemonData && (
           <div
             className="max-w-2xl"
