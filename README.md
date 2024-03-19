@@ -39,3 +39,9 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # exercicio-pokemon-types-front
+
+
+# Backlog Pockedex
+*Listagem simples HTML dos pokemons e suas fraquezas* ok! 
+*Filtrar pockemon pelo nome* andamento...
+*Mostrar pockemons em cards - utilizar componentização*
