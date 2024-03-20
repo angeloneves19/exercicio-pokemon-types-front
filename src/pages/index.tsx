@@ -100,7 +100,7 @@ export default function Home() {
             >
               <CardActionArea>
                 <Typography gutterBottom variant="h5" component="div">
-                  Pikachu
+                  {pokemonData?.name + " "}
                 </Typography>
                 <CardMedia className="ml-12">
                   <Image
